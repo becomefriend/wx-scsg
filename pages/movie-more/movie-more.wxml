@@ -1,0 +1,15 @@
+<!-- 引入星星的算法 -->
+<import src='../movie/stars/stars.wxml'/>
+<scroll-view scroll-y="true"   bindscrolltolower="findmore">
+<!-- 滑到底部触动事件:bindscrolltolower -->
+<view class='more'>
+  <view  class='more-list' wx:for="{{allMore}}" wx:key="{{index}}" bindtap='tomovie1' data-id='{{item.id}}'>
+    <image class='more-image' src='{{item.images.large}}'>  </image>
+    <view class='more-title'>{{item.title}}</view>
+    <view class='more-pingfen'>
+    <template is='stars' data='{{item}}'/>
+    <text class='shuzi'>{{item.rating.average}}</text>
+   </view>
+  </view>
+</view>
+</scroll-view>

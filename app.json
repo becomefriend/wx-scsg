@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/about/about",
+    "pages/login/login",
+    "pages/index/index",
+    
+    "pages/new1/new1",
+    "pages/music/music",
+    
+    "pages/movie/movie",
+    "pages/new1/new2/new2",
+  
+    "pages/movie-shousuo/movie-shousuo",
+    "pages/movie1/movie1",
+    "pages/movie/stars/stars",
+    "pages/movie-more/movie-more"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "山川拾光",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/new1/new1",
+        "text": "小文",
+        "iconPath": "pages/img/book.png",
+        "selectedIconPath": "pages/img/book1.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "小影",
+        "iconPath": "pages/img/bk.png",
+        "selectedIconPath": "pages/img/bk2.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "小家",
+        "iconPath": "pages/img/person.png",
+        "selectedIconPath": "pages/img/person1.png"
+      }
+    ],
+    "borderStyle": "black",
+    "selectedColor": "#FACA52"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,61 @@
+<!--pages/movie1/movie1.wxml-->
+<!-- 引入星星的算法 -->
+<import src='../movie/stars/stars.wxml' />
+<view class='movie1-head'>
+  <view class='movie1-img'>
+    <image src='{{img}}'></image>
+  </view>
+  <view class='movie1-right'>
+    <view class='movie1-right-name'>
+      {{title}}
+    </view>
+    <view class='movie1-right-next'>
+      <view wx:for="{{juqing}}" wx:key="{{index}}">{{item}}</view>
+      <view>/</view>
+      <view wx:for="{{local}}" wx:key="{{index}}">{{item}}</view>
+      <view>/</view>
+      <view>{{year}}年上映</view>
+
+    </view>
+    <view class='movie1-right-next2' bindtap='gologin'>前往观影</view>
+    <view class='movie1-right-next3' bindtap='gologin'>点击影评</view>
+  </view>
+</view>
+<view class='rating'>
+  <view class='rating-title'>
+    评分
+  </view>
+  <view>
+    <view class='rating-average'>
+      {{fengshu.average}}
+    </view>
+    <view class='rating-stars'>
+      <template is='stars' data='{{item}}' />
+    </view>
+  </view>
+</view>
+
+<view class='jianjie'>
+  <view class='jianjie-title'>
+    简介
+  </view>
+  <view class='jianjie-neirong'>
+    {{jianjie}}
+  </view>
+</view>
+<view class='actor'>
+  <view class='actor-title'>
+    演员
+  </view>
+  <scroll-view scroll-x='true'>
+
+    <view class='actor-neirong'>
+      <view class='actor-neirong-xunhuan' wx:for="{{actor}}" wx:key="{{index}}">
+        <image src='{{item.avatars.large}}'></image>
+        <view class='actor-name'>{{item.name}}</view>
+      </view>
+
+    </view>
+
+  </scroll-view>
+</view>

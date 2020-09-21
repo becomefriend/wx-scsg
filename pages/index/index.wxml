@@ -1,0 +1,27 @@
+<view class='container '>
+  <view class="login-from">
+
+    <!--账号-->
+    <image class='logo2' src='http://www.rmzxb.com.cn/upload/resources/image/2016/11/23/1332831.png'></image>
+    <view class="inputView">
+      <label class="loginLab">账号:</label>
+
+      <input class="inputText" placeholder="请输入账号" bindinput="phoneInput" />
+
+    </view>
+
+    <!--密码-->
+
+    <view class="inputView">
+
+      <label class="loginLab">密码:</label>
+
+      <input class="inputText" password="true" placeholder="请输入密码" bindinput="passwordInput" />
+
+    </view>
+
+    <!--按钮-->
+    <button open-type="getUserInfo" class="loginBtn" hover-class='hover' bindtap="login">biu~一下</button>
+  </view>
+
+</view>

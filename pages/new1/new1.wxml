@@ -1,0 +1,64 @@
+<!--pages/new1/new1.wxml-->
+    <!---
+ *　　　　　　　　┏┓　　　┏┓+ +
+ *　　　　　　　┏┛┻━━━┛┻┓ + +
+ *　　　　　　　┃　　　　　　　┃ 　
+ *　　　　　　　┃　　　━　　　┃ ++ + + +
+ *　　　　　　 ████━████+
+ *　　　　　　　┃　　　　　　　┃ +
+ *　　　　　　　┃　　　┻　　　┃
+ *　　　　　　　┃　　　　　　　┃ + +
+ *　　　　　　　┗━┓　　　┏━┛
+ *　　　　　　　　　┃　　　┃　　　　　　　　　　　
+ *　　　　　　　　　┃　　　┃ + + + +
+ *　　　　　　　　　┃　　　┃　　　　　　　
+ *　　　　　　　　　┃　　　┃ + 　　　　神兽镇楼、加油、无BUG　
+ *　　　　　　　　　┃　　　┃
+ *　　　　　　　　　┃　　　┃　　+　　　　　　　　　
+ *　　　　　　　　　┃　 　　┗━━━┓ + +
+ *　　　　　　　　　┃ 　　　　　　　┣┓
+ *　　　　　　　　　┃ 　　　　　　　┏┛
+ *　　　　　　　　　┗┓┓┏━┳┓┏┛ + + + +
+ *　　　　　　　　　　┃┫┫　┃┫┫
+ *　　　　　　　　　　┗┻┛　┗┻┛+ + + +
+
+--->
+<import src="public/public.wxml" />
+<view class='first'>
+  <!-- 轮播 -->
+  <swiper catchtap='lunbotonew2'  indicator-dots='{{indicatorDots}}' autoplay='{{autoPlay}}' interval='{{interval}}' circular='{{circular}}'>
+    <swiper-item>
+      <image data-index="6"  src='http://pic1.win4000.com/wallpaper/d/58465a6a35706.jpg' class='lunbo'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index="5"  src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555138309328&di=16db200701108ba6d753718f83ba9013&imgtype=0&src=http%3A%2F%2Fuploads.oh100.com%2Fallimg%2F1706%2F234Z45049-0.jpg' class='lunbo'></image>
+</swiper-item>
+   <swiper-item>
+      <image data-index="3" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560578770243&di=660e732351cd252b1e86f67af800fb06&imgtype=0&src=http%3A%2F%2Fuploads.5068.com%2Fallimg%2F1801%2F85-1P113091I4.jpg' class='lunbo'></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{usedata}}" wx:for-item="item" wx:key='{{index}}'>
+    <!-- wx:for只能循环数组 -->
+    <!-- wx:for-item="item"是默认的可加可不加 -->
+    <!-- k作为静态唯一标识符，不加报黄色警告，没用但要加 -->
+
+    <!-- item={
+       "newsid": 0,
+       "toubutupian": "../img/6.jpg",
+       "name": "小天",
+       "time": "2019/4/21",
+       "title": "岁月不老，一生同在",
+    }
+    用了...item后
+       "newsid": 0,
+       "toubutupian": "../img/6.jpg",
+       "name": "小天",
+       "time": "2019/4/21",
+       "title": "岁月不老，一生同在", -->
+   
+    <view bindtap='gonew2' data-newsid="{{item.newsid}}" data-index='{{index}}' >
+      <template is="gongong" data="{{...item}}" />
+    </view>
+
+  </block>
+</view>

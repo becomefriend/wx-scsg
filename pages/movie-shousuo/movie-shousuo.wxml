@@ -1,0 +1,23 @@
+<!--pages/movie-shousuo/movie-shousuo.wxml-->
+
+<import src='../movie/stars/stars.wxml' />
+<view class='sousuo'>
+  <view class='sousuokuang'>
+    <image src='../img/bigger.png' class='bigger'></image>
+    <input placeholder='搜索' bindinput='inputneirong'></input>
+  </view>
+</view>
+
+<view class='sousuonierong'>
+  <view class='sousuonierong-left' wx:for="{{searchsuju}}" wx:key="{{index}}" bindtap='tomovie1' data-id="{{item.id}}">
+    <image class='sousuonierong-image' src='{{item.images.large}}'></image>
+    <view class='sousuo-left'>
+      <view class='sousuo-title'>{{item.title}}</view>
+      <view class='sousuo-pingfeng'>
+        <template is='stars' data='{{item}}' />
+        <text class='shuzi'>{{item.rating.average}}</text>
+      </view>
+     
+    </view>
+  </view>
+</view>

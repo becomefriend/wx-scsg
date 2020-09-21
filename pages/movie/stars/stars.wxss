@@ -1,0 +1,4 @@
+/* pages/movie/stars/stars.wxss */
+.stars{
+  display: flex;
+}

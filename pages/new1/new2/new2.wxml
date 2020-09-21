@@ -1,0 +1,42 @@
+<!--pages/new1/new2/new2.wxml-->
+<view class='news2-container'>
+  <image class='news2-head-img' src='{{xuanran.centertupain}}'></image>
+  <view class='news2-zuozhechaozuo'>
+    <image class='news2-toubutupian' src='{{xuanran.toubutupian}}'></image>
+    <text class='news2-name'>{{xuanran.name}}</text>
+    <text class='news2-fabiaoyu'>发表于</text>
+    <text class='news2-time'>{{xuanran.time}}</text>
+    <image catchtap='playmusic' class="news2-music" src="{{ isplayer?'../../img/music2.png':'../../img/music.png'}}"></image>
+  </view>
+  <text class='news2-title'>{{xuanran.title}}</text>
+  <view class='news2-tool'>
+    <view class='news2-biaotilan'>
+      <!-- //条件渲染中wx:if=“{{渲染的东西}}” 来判断是否渲染该模块，true，显示，false，隐藏。 -->
+      <image wx:if="{{collect}}" class='news2-shouchang' catchtap='shouchangshijian' src='../../img/13.png'></image>
+      <image wx:if="{{!collect}}" class='news2-shouchang' catchtap='shouchangshijian' src='../../img/12.png'></image>
+      <image catchtap='fengxiangshijian' class='news2-fengxiang' src='../../img/11.png'></image>
+    </view>
+    <view class='news2-xiaohengxian'></view>
+  </view>
+  <text class='news2-neirong'>{{xuanran.articl}}</text>
+</view>
+ <view class='news2-xiaohengxian1'></view>
+<view class="msg-box">
+
+  <!--留言-->
+
+  <view class="send-box">
+    <input bindinput="changeInputValue" class="input" type="text" value="{{inputVal}}" placeholder="请输入留言……" placeholder-class="place-input" />
+    <button size="mini" type="primary" bindtap="addMsg">发表</button>
+  </view>
+
+  <!--留言列表-->
+
+  <text class="msg-info" wx:if="{{msgData.length==0}}">暂无留言……^_^</text>
+  <view class="list-view">
+    <view class="item" wx:for="{{msgData}}" wx:key="{{index}}">
+      <text class="text1">{{item.msg}}</text>
+      <icon type="cancel" bindtap="DelMsg" data-index="{{index}}" class="close-btn" />
+    </view>
+  </view>
+</view>

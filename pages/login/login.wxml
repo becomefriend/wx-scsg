@@ -1,0 +1,104 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class='tupian'>
+    <image class='green' src='http://img.zcool.cn/community/03858f755deba610000015995167917.jpg'></image>
+
+  </view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='guanyu' bindtap='about'>
+    关于我们
+    <image src='../img/gy.png' class='gy'></image>
+  </view>
+  <view class='all'>
+    <view class='book'>我的书影音</view>
+    <view class='open'>
+      <text class='openall'>全部</text>
+      <image src='../img/right.png' class='al'></image>
+    </view>
+  </view>
+  <view class='fengxi'>
+  <view class='guanyin-left'>
+      <image src='../img/gi.png' class='giphoto'></image>
+      <view>
+        <view class='guanyin-left-top'>观影分析</view>
+        <view class='shuju'>
+          <view class='shuliang'>0</view>
+          <view class='kan'>看过</view>
+        </view>
+      </view>
+    </view>
+    <view class='guanyin-right'>
+      <view class='guanyin-right-left'>
+        <view class=''>
+          标记10部影片
+        </view>
+        <view class=''>
+          开启观影分析
+        </view>
+      </view>
+      <view class='guanyin-right-right'>
+        <view class='liji' bindtap='tomovie' data-id='排行榜' >立即开始</view>
+        <image src='../img/right.png' class='al'></image>
+      </view>
+    </view>
+</view>
+<view class='fengxi'>
+  <view class='guanyin-left'>
+      <image src='../img/ds.png' class='giphoto'></image>
+      <view>
+        <view class='guanyin-left-top'>读书分析</view>
+        <view class='shuju'>
+          <view class='shuliang1'>0</view>
+          <view class='kan1'>读过</view>
+        </view>
+      </view>
+    </view>
+    <view class='guanyin-right'>
+      <view class='guanyin-right-left'>
+        <view class=''>
+          标记10篇文章
+        </view>
+        <view class=''>
+          开启文章分析
+        </view>
+      </view>
+      <view class='guanyin-right-right'>
+        <view class='liji' bindtap='toread'>立即开始</view>
+        <image src='../img/right.png' class='al'></image>
+      </view>
+    </view>
+</view>
+<view class='fengxi'>
+  <view class='guanyin-left'>
+      <image src='../img/music3.png' class='giphoto'></image>
+      <view>
+        <view class='guanyin-left-top'>音乐分析</view>
+        <view class='shuju'>
+          <view class='shuliang2'>0</view>
+          <view class='kan2'>听过</view>
+        </view>
+      </view>
+    </view>
+    <view class='guanyin-right'>
+      <view class='guanyin-right-left'>
+        <view class=''>
+          播放10张唱片
+        </view>
+        <view class=''>
+          开启音乐分析
+        </view>
+      </view>
+      <view class='guanyin-right-right'>
+        <view class='liji'  bindtap='tolisten' >立即开始</view>
+        <image src='../img/right.png' class='al'></image>
+      </view>
+    </view>
+</view>
+</view>

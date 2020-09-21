@@ -1,0 +1,12 @@
+/* pages/new1/new1.wxss */
+@import "public/public.wxss";
+.first {
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+}
+
+.lunbo{
+  width: 100%;
+}
+

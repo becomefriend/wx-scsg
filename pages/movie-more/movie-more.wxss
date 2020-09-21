@@ -1,0 +1,50 @@
+/* pages/movie-more/movie-more.wxss */
+@import '../movie/stars/stars.wxss';
+
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  /* 使用scroll-view scroll-y时一定要记得加高度值 */
+  height: 1200rpx;
+}
+
+.more-list {
+  width: 200rpx;
+  padding: 25rpx;
+}
+
+.more-image {
+  width: 200rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+.more-title {
+  text-align: center;
+  font-size: 32rpx;
+  /* 超出文本隐藏 */
+  overflow: hidden;
+  /* 溢出用省略号显示 */
+  text-overflow: ellipsis;
+  /* 溢出不换行 */
+  white-space: nowrap;
+}
+
+.more-pingfen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-pingfen image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.shuzi {
+  font-size: 30rpx;
+  padding-left: 10rpx;
+  color: #999;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30rpx;
+}

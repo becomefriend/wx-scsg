@@ -1,0 +1,94 @@
+/* 公共文章样式 */
+
+.wengzhangbiaodan {
+  display: flex;
+  flex-direction: column;
+ 
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  box-shadow:0 6rpx 10rpx 2rpx #999;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.toubu {
+  display: flex;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.toubutupian {
+  width: 70rpx;
+  height: 70rpx;
+  border: 2px solid pink;
+  border-radius: 50px;
+  /* 上下垂直居中 */
+  vertical-align: middle;
+}
+
+.name {
+  margin-top: 22rpx;
+  margin-left: 20rpx;
+}
+
+.time {
+  margin-left: 20rpx;
+  vertical-align: middle;
+  margin-top: 38rpx;
+  font-size: 26rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.centertupain {
+  margin-left: 16px;
+  width: 100%;
+  height: 340rpx;
+  margin: auto 0;
+  margin-bottom: 15px;
+}
+
+.articl {
+  color: #666;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+  /* 字间距 */
+  letter-spacing: 2rpx;
+  line-height: 40rpx;
+}
+
+.duzhechaozuo {
+  font-size: 13px;
+  /* 水平布局 */
+  display: flex;
+  line-height: 16px;
+}
+
+.shouchangtupian1 {
+  width: 21px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.shouchangtupian {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.pinglunshuliang {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.shouchangliang {
+  vertical-align: middle;
+  margin-right: 20px;
+}

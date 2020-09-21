@@ -1,0 +1,21 @@
+<!-- 公共文章 -->
+<template name="gongong">
+  <view class='wengzhangbiaodan'>
+    <view class='toubu'>
+      <image class='toubutupian' src="{{toubutupian}}"></image>
+      <text class='name'>{{name}}</text>
+      <text class='time'>{{time}}</text>
+    </view>
+    <text class='title'>{{title}}</text>
+    <image class='centertupain' src='{{centertupain}}'></image>
+    <text class='articl'>{{smallarticl}}</text>
+    
+    <view class='duzhechaozuo'>
+      <image class='shouchangtupian1' src='../img/9.png'></image>
+      <text class='pinglunshuliang' >{{pinglunshuliang}}</text>
+      <image class='shouchangtupian' src='../img/10.png'></image>
+      <text class='shouchangliang'>{{shouchangliang}}</text>
+      
+    </view>
+  </view>
+</template>

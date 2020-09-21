@@ -1,0 +1,77 @@
+/* pages/movie/movie.wxss */
+@import 'stars/stars.wxss';
+.top{
+  background: #D3DBFF;
+  padding: 20rpx 30rpx;
+
+}
+.next{
+  background: white;
+  border-radius:10rpx ;
+  text-align:center;
+  color: #ccc;
+  font-size: 32rpx;
+  padding: 6rpx;
+}
+.bigger{
+  width: 32rpx;
+  height: 32rpx;
+  padding-top:2rpx; 
+  
+}
+.list-top{
+  display: flex;
+  /* 左右对称 */
+  justify-content: space-between;
+  padding: 20rpx 30rpx;
+  font-size: 30rpx;
+}
+
+.more{
+  color:#D3DBFF;
+}
+.right{
+  width: 30rpx;
+  height: 32rpx;
+ 
+}
+.list-body-second{
+width: 230rpx;
+height: 330rpx;
+border-radius: 10rpx;
+
+
+}
+.list-body-name{
+  text-align: center;
+  font-size:30rpx; 
+  /* 超出文本隐藏 */
+  overflow: hidden;
+  /* 溢出用省略号显示 */
+  text-overflow: ellipsis;
+  /* 溢出不换行 */
+  white-space: nowrap;
+}
+.list-body{
+  display: flex;
+}
+.list-body-first{
+  width: 230rpx;
+  padding: 20rpx;
+}
+.list-body-stars{
+  display: flex;
+  justify-content: space-between;
+}
+.list-body-stars image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.fensu{
+  font-size: 30rpx;
+  padding-left:10rpx;
+  color: #999;
+  font-weight: bold; 
+  text-align: center;
+  line-height: 30rpx; 
+}

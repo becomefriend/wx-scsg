@@ -1,0 +1,26 @@
+<!--pages/about/about.wxml-->
+<view class='body' bindtap='tonew1'>
+  <view class='plar'>
+    <image class='tupian' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558371061085&di=a442396330a3ff5a099c9a942f75f2bb&imgtype=0&src=http%3A%2F%2Fwww.mangowed.com%2Fuploads%2Fallimg%2F130506%2F572-130506144952C1.jpg'></image>
+
+
+  </view>
+  <view class='name'>Creat 山林 / 设计 鑫川 </view>
+  <view class='name1'>指导：付红玉老师 </view>
+  <view class='bottom'>
+    <view class='bottom-next1'>
+      山川拾光
+    </view>
+    <view class='hengxian'></view>
+    <view class='bottom-next2'>
+      <view class='bottom-next2-left'></view>
+      <view class='bottom-next2-left-next'>本小程序通过音乐，文章和影视的推荐，使用户在繁忙的生活中得到一些心灵的慰藉。</view>
+
+    </view>
+    <view class='bottom-next2'>
+      <view class='bottom-next2-left'></view>
+      <view class='bottom-next2-left-next'>运用了页面传参，数据缓存，接口调用，算法封装，登录跳转等微信小程序常用技巧。</view>
+
+    </view>
+  </view>
+</view>

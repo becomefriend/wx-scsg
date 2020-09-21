@@ -1,0 +1,56 @@
+/* pages/login/login.wxss */
+
+page {
+  overflow: hidden;
+  position: fixed;
+  background-image: url(' https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561373724493&di=fd2a24f1bf1989898fe493ee2ddbbaec&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F20%2F20180620212226_UVWrJ.thumb.700_0.jpeg');
+  margin: 0px;
+  /*下面的是关键的设置100%显示*/
+  background-size: 100% 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: rgba(243, 240, 240, 0.37);
+}
+
+.inputView {
+  display: flex;
+}
+
+.loginLab {
+  margin-left: 120rpx;
+  margin-right: 38rpx;
+  margin-bottom: 50rpx;
+}
+
+.inputText {
+  border: 1px solid pink;
+  padding: 5rpx;
+  border-radius: 5px;
+}
+
+.loginBtn {
+  font-size: 15px;
+  margin-left: 120rpx;
+  margin-top: 30px;
+  width: 72%;
+  background-color: rgb(252, 126, 67);
+ 
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+  box-shadow: 0 6rpx 10rpx 2rpx #999;
+}
+
+/* 按下变颜色 */
+
+.hover {
+  background: rgb(236, 179, 156);
+   
+}

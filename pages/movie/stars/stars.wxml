@@ -1,0 +1,13 @@
+<!-- 公共的星星样式 -->
+<template name="stars">
+ <!-- wx:for-item='i'是将电影页传过来的item值进行了赋值，让它不跟着数组循环 -->
+  <view wx:for='{{[1,2,3,4,5]}}' wx:key='{{index}}' class='stars' wx:for-item='i'>
+  <!-- stars=35/10=3.5>=1 2 3 
+  true 黄
+  true 黄
+  true 黄 接口传过来的星星是以数字格式传过来的，所以对数字进行处理取余然后对比wx:key='{{index}}'判断该拿哪种星星图片-->
+    <image src='../img/quan.png' wx:if='{{item.rating.stars/10>=index+1}}'></image>
+    <image src='../img/ban.png' wx:elif='{{item.rating.stars/10>=index&&item.rating.stars%10!=0}}'></image>
+    <image src='../img/none.png' wx:else></image>
+  </view>
+</template>

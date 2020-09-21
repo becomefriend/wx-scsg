@@ -1,0 +1,35 @@
+<!--pages/movie/movie.wxml-->
+<!-- 引入星星 -->
+<import src='stars/stars.wxml'/>
+<view class='top'>
+  <view class='next' bindtap='tomovieshousuo'>
+    <image src='../img/bigger.png' class='bigger'></image>
+    搜索
+  </view>
+</view>
+<view class='zhuti'>
+<!-- 循环list区分3个页面 -->
+  <view class='list' wx:for='{{list}}' wx:key="{{ll}}">
+    <view class='list-top'>
+      <view class='reipin'>{{item.title}}</view>
+      <view class='more'  bindtap='tomore' data-title='{{item.title}}'>查看更多
+        <image src='../img/right.png' class='right'></image>
+      </view>
+    </view>
+    <scroll-view scroll-x="true">
+      <view class='list-body'>
+      <!-- 循环每一个页面的20条数据进行赋值， wx:for-key是用来区分上面那一层循环中的数据的，data-id="{{item.id}}"是用来获取id的 -->
+        <view class='list-body-first' wx:for="{{item.shuju.subjects}}" wx:for-key="item" wx:key="{{ll}}" bindtap='tomovie1' data-id="{{item.id}}">
+          <image class='list-body-second' src='{{item.images.large}}'></image>
+          <view class='list-body-name'>{{item.title}}</view>
+          <view class='list-body-stars'>
+          <!-- 将接收的星星值通过data传给星星页进行计算 -->
+           <template is='stars' data='{{item}}'/>
+            <text class='fensu'>{{item.rating.average}}</text>
+          </view>
+        </view>
+
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,154 @@
+/* pages/new1/new2/new2.wxss */
+
+.news2-container {
+  display: flex;
+  /* 盒子模型默认水平布局，改变为垂直布局 */
+  flex-direction: column;
+}
+
+.news2-head-img {
+  width: 100%;
+  height: 450rpx;
+}
+
+.news2-zuozhechaozuo {
+  flex-direction: row;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.news2-toubutupian {
+  width: 70rpx;
+  height: 70rpx;
+  border: 2px solid pink;
+  border-radius: 50px;
+  /* 上下垂直居中 */
+  vertical-align: middle;
+}
+
+.news2-name {
+  margin-top: 22rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  vertical-align: middle;
+  color: #666;
+}
+
+.news2-fabiaoyu {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 12rpx;
+}
+
+.news2-time {
+  font-size: 24rpx;
+  margin-left: 15rpx;
+  vertical-align: middle;
+  color: #999;
+}
+
+.news2-title {
+  margin-left: 40rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+  color: #4b556c;
+}
+
+.news2-tool {
+  margin-top: 20rpx;
+}
+
+.news2-biaotilan {
+  float: right;
+  margin-right: 40rpx;
+  vertical-align: middle;
+}
+
+.news2-shouchang {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 5px;
+}
+
+.news2-fengxiang {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+   margin-bottom: 5px;
+}
+
+.news2-xiaohengxian {
+  width: 660rpx;
+  height: 1px;
+  background-color: #13223d;
+  vertical-align: middle;
+  position: relative;
+  top: 60rpx;
+  margin: 0 auto;
+  z-index: -55;
+}
+.news2-xiaohengxian1{
+   width: 660rpx;
+  height: 1px;
+  background-color: #87ceff;
+  vertical-align: middle;
+  position: relative;
+  top:20rpx;
+  margin: 0 auto;
+  z-index: -55;
+}
+.news2-neirong {
+  color: #666;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  /* 字间距 */
+  letter-spacing: 2rpx;
+  line-height: 44rpx;
+}
+.news2-music{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.msg-box {
+  padding: 20px;
+}
+.send-box {
+  display: flex;
+}
+.input {
+  border: 1px solid #b0c4de;
+  padding: 5px;
+}
+.msg-info {
+  display: block;
+  margin: 10px 0 0 0;
+  color: #390;
+  font-size: 35rpx;
+}
+.place-input {
+  color: rgb(114, 112, 111);
+  font-size: 35rpx;
+}
+.list-view {
+  margin: 20px 0 0 0;
+}
+.item {
+  overflow: hidden;
+  border-bottom: 1px dashed #87ceff;
+  height: 30px;
+  line-height: 30px;
+}
+.text1 {
+  float: left;
+}
+.close-btn {
+  float: right;
+  margin: 5px 5px 0 0;
+}
